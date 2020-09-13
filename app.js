@@ -19,6 +19,7 @@ const submit = document.querySelector('.submit-button');
 const complete = document.getElementById('complete');
 const name = document.getElementById('name');
 const popup = document.querySelector('.popup');
+const finalSub = document.getElementById('final-sub');
 
 let allTeamsArr = [];
 allTeams.forEach(i => allTeamsArr.push(i));
@@ -88,6 +89,12 @@ submit.addEventListener('click', e => {
     nfcWildCardin.value += allPlayofTeams.slice(11, 14);
     name.value = nameSub;
     showPopup(`Thank You ${name.value}!`, 'rgb(63, 136, 63)');
+    finalSub.value += name.value + '-';
+    finalSub.value += afcDivWinners + '-';
+    finalSub.value += nfDivWinners + '-';
+    finalSub.value += afcWildCardin + '-';
+    finalSub.value += nfcWildCardin + '-';
+
     setTimeout(() => {
       complete.submit();
     }, 2000);
@@ -284,12 +291,3 @@ function showPopup(msg, color) {
     location.reload();
   }, 3000);
 }
-
-let nameSub = '';
-
-// GET NAME
-name.addEventListener('keydown', () => {
-  nameSub = name.value;
-  console.log(name.value);
-  console.log(nameSub);
-});

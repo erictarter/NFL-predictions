@@ -334,6 +334,10 @@ body {
   font-size: 1.5rem;
 }
 
+#final-sub {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .header {
     display: flex;
