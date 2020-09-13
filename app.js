@@ -88,7 +88,9 @@ submit.addEventListener('click', e => {
     nfcWildCardin.value += allPlayofTeams.slice(11, 14);
 
     showPopup(`Thank You ${name.value}!`, 'rgb(63, 136, 63)');
-    complete.submit();
+    setTimeout(() => {
+      complete.submit();
+    }, 2000);
 
     confirmSubmit = true;
   } else {
