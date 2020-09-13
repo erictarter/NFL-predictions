@@ -88,7 +88,7 @@ submit.addEventListener('click', e => {
     afcWildCardin.value += allPlayofTeams.slice(8, 11);
     nfcWildCardin.value += allPlayofTeams.slice(11, 14);
 
-    finalSubmit.value += name.value.toUpperCase + ' - ';
+    finalSubmit.value += name.value + ' - ';
     finalSubmit.value += afcDivWinners.value + ' - ';
     finalSubmit.value += nfcDivWinners.value + ' - ';
     finalSubmit.value += afcWildCardin.value + ' - ';
