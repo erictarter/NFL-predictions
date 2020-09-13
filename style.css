@@ -1,0 +1,479 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  display: grid;
+  max-width: 70%;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  margin-top: 2rem;
+  border-bottom: 1px solid #000;
+  justify-content: center;
+}
+.header-title {
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+.logo img {
+  height: 5rem;
+  width: 4rem;
+}
+
+.afc-title {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.afc-title img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.afc-east-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.division {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  justify-content: space-between;
+}
+
+.team {
+  padding: 5px;
+}
+
+.team img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.afc-east-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.afc-east-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+.afc-west-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.afc-west-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.afc-north-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.afc-north-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.afc-south-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.afc-south-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.nfc-east-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.nfc-east-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+.nfc-west-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.nfc-west-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.nfc-north-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.nfc-north-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.nfc-south-winner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.nfc-south-winner img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.wildcard-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.wildcard-header h1 {
+  font-size: 3rem;
+}
+
+.afc-wildcard-container {
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.afc-img {
+  display: flex;
+  justify-content: center;
+}
+
+.afc-img img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.afc-wildcard-container h2 {
+  text-align: center;
+}
+
+.afc-wildcard-teams {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 2px solid white;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  place-items: center;
+}
+
+.chosen-afc-wildcard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 1rem;
+}
+
+.nfc-wildcard-container {
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.nfc-img {
+  display: flex;
+  justify-content: center;
+}
+
+.nfc-img img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
+.nfc-wildcard-container h2 {
+  text-align: center;
+}
+
+.nfc-wildcard-teams {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 2px solid white;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  place-items: center;
+}
+
+.chosen-nfc-wildcard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 1rem;
+}
+
+.remove {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.wc-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-top: 1rem;
+}
+
+.wc-image img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+.submit-forms {
+  display: grid;
+  margin-top: 2rem;
+  place-items: center;
+}
+
+#afc-win {
+  display: none;
+}
+#nfc-win {
+  display: none;
+}
+#afc-wc {
+  display: none;
+}
+#nfc-wc {
+  display: none;
+}
+
+.submit {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  width: 322px;
+  font-size: 1.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+
+.submit-button {
+  width: 360px;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: rgb(35, 35, 187);
+  cursor: pointer;
+}
+
+.inp {
+  display: none;
+}
+
+.popup-container {
+  display: grid;
+  place-items: center;
+  margin-top: 0.5rem;
+}
+.popup {
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  padding: 2rem;
+  background: grey;
+  color: white;
+  display: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .afc-east-title {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+  }
+
+  .afc-east {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .afc-west {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .afc-north {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .afc-south {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .nfc-east {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .nfc-west {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .nfc-north {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .nfc-south {
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .team img {
+    width: 2.5rem;
+    height: 3rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .afc-east-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .afc-east-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+
+  .afc-west-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .afc-west-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+
+  .afc-north-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .afc-north-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+  .afc-south-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .afc-south-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+
+  .nfc-east-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .nfc-east-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+
+  .nfc-west-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .nfc-west-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+
+  .nfc-north-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .nfc-north-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+  .nfc-south-winner {
+    width: 2.5rem;
+    height: 3rem;
+  }
+  .nfc-south-winner img {
+    width: 2.5rem;
+    height: 3rem;
+    display: hidden;
+  }
+
+  .afc {
+    max-width: 375px;
+  }
+
+  .header-title {
+    font-size: 1rem;
+    color: rgb(208, 68, 68);
+  }
+}
