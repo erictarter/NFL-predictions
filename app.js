@@ -86,7 +86,7 @@ submit.addEventListener('click', e => {
     nfcDivWinners.value += allPlayofTeams.slice(4, 8);
     afcWildCardin.value += allPlayofTeams.slice(8, 11);
     nfcWildCardin.value += allPlayofTeams.slice(11, 14);
-
+    name.value = nameSub;
     showPopup(`Thank You ${name.value}!`, 'rgb(63, 136, 63)');
     setTimeout(() => {
       complete.submit();
@@ -285,5 +285,11 @@ function showPopup(msg, color) {
   }, 3000);
 }
 
+let nameSub = '';
+
 // GET NAME
-// GET TEAM CATS
+name.addEventListener('keydown', () => {
+  nameSub = name.value;
+  console.log(name.value);
+  console.log(nameSub);
+});
