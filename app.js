@@ -88,9 +88,9 @@ submit.addEventListener('click', e => {
     afcWildCardin.value += allPlayofTeams.slice(8, 11);
     nfcWildCardin.value += allPlayofTeams.slice(11, 14);
 
-    finalSubmit.value += name.input;
+    finalSubmit.value += name.value;
     finalSubmit.value += afcDivWinners.value;
-    finalSubmit.value += nfcDivWinners.valuel;
+    finalSubmit.value += nfcDivWinners.value;
     finalSubmit.value += afcWildCardin.value;
     finalSubmit.value += nfcWildCardin.value;
 
